@@ -3,6 +3,11 @@
       grid-template-columns: 1fr auto;
       padding: 8px 32px;
     }
+
+    .hero{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                           rgba(0, 0, 0, 0.5)), url('../public/images/hero-images/hero-image_2-large.jpg');
+    }
    
     .app-bar .app-bar__brand h1 {
       font-size: 1.5em;
@@ -46,7 +51,24 @@
       grid-column-end: 3;
     }
   }
-   
+  
+  @media screen and (max-width: 651px) {
+    .app-bar .app-bar__brand h1 {
+      font-size: 1.2em;
+    }
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('../public/images/hero-images/hero-image_2-small.jpg');
+    }
+    
+    .hero__title{
+      font-size: 24px;
+    }
+
+    .hero__tagline{
+      font-size: 16px;
+    }  
+  }
   @media screen and (min-width: 800px) {
     .app-bar .app-bar__brand h1 {
       font-size: 2em;
