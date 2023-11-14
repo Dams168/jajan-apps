@@ -1,4 +1,3 @@
-
 module.exports = function (config) {
   config.set({
 
@@ -37,7 +36,7 @@ module.exports = function (config) {
 
     browsers: ['ChromeHeadless'],
 
-    singleRun: false,
+    singleRun: true,
 
     concurrency: Infinity,
   });
